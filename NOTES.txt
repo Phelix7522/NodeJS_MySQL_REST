@@ -1,0 +1,31 @@
+Create a Database
+Create Proj Folder
+>npm init
+>npm i express dotenv mysql2
+Create index.js
+Create routes folder > create router.js
+Create controller folder > create controller.js
+
+
+*
+Create function in controller.js and export
+Create router instance in router.js 
+
+ 	const router = express.Router()
+
+Create Controller instance in router.js and call the function from controller.js and export router
+
+	const postsController = require("../controller/posts.controller")
+
+	router.get("/",postsController.getAll)
+
+
+Create specific router instance in index.js and app.use this router
+
+	const postsRouter = require('./routes/posts.router')
+	app.use("/api/v1/posts",postsRouter)
+
+
+>npm install multer body-parser sharp --save
+
+
