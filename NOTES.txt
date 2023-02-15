@@ -29,3 +29,7 @@ Create specific router instance in index.js and app.use this router
 >npm install multer body-parser sharp --save
 
 
+>npm install jsonwebtoken
+
+
+
