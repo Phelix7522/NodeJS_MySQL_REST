@@ -4,13 +4,13 @@ const postsController = {
     getAll: async (req,res) => {
 
         try{
-            // const [rows,fields] = await pool.query("SELECT * from posts");
-            // res.json(
-            //         {
-            //             message:"Success",
-            //             data: rows
-            //         }
-            //         )
+            const [rows,fields] = await pool.query("SELECT * from posts");
+            res.json(
+                    {
+                        message:"Success",
+                        data: rows
+                    }
+                    )
             console.log("Here>>>")
         } catch (error) {
             console.log(error)
